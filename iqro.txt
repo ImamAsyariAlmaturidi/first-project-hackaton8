@@ -1,0 +1,30 @@
+job desk athif dan husen, buat ui untuk adminLogin, Dashboard, Homepage, Contact, Faq(optional), Galery.
+
+home page berisi :
+1. header
+2. navbar
+3. content
+4. footer
+
+about page berisi :
+1. header
+2. navbar
+3. text dibawah ini
+ If you need more information about a product, want to know more about your order or if you have any other type of question, you can contact us through this form:
+4. dibawah text ada 3 button link github kita masing", 
+5. footer 
+
+adminLogin page berisi: 
+1. form login aja. yang berisi username password dan button login
+
+dashboard page berisi: 
+1. table data products
+2. component admin details
+3. CRUD data. like insert, delete, read, create
+
+
+usahakan pake tailwindcss, responsive sunnah tidak wajib, but better we complete it.
+
+jika kesusahan bisa minta tolong tim.
+
+ini first project kt, seenggaknya bisa jadi portfolio, semengat gays, jangan lupa beliin gua kopi!
