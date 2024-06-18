@@ -5,6 +5,7 @@ const tshirt = [
     description: "catharsis t-shirt",
     price: "$100",
     image: "/image/t-shirt/cat-sensitivity.webp",
+    star: "✭✭✭✭✭ (13)",
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ const tshirt = [
     description: "catharsis t-shirt",
     price: "$100",
     image: "/image/t-shirt/cat-cute.webp",
+    star: "✭✭✭✭ (8)",
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ const tshirt = [
     description: "catharsis t-shirt",
     price: "$100",
     image: "/image/t-shirt/cat-aldente.webp",
+    star: "✭✭✭✭✭ (21)",
   },
   {
     id: 4,
@@ -26,6 +29,7 @@ const tshirt = [
     description: "catharsis t-shirt",
     price: "$100",
     image: "/image/t-shirt/cat-dolcevita.webp",
+    star: "✭✭✭✭✭ (7)",
   },
   {
     id: 5,
@@ -33,6 +37,7 @@ const tshirt = [
     description: "catharsis t-shirt",
     price: "$100",
     image: "/image/t-shirt/cat-boundaries.webp",
+    star: "✭✭✭✭ (15)",
   },
 ];
 
@@ -43,6 +48,7 @@ const hoddie = [
     description: "catharsis hoodie",
     price: "$150",
     image: "/image/hoodie/cat-cool-hoodie.webp",
+    star: "✭✭✭ (2)",
   },
   {
     id: 2,
@@ -50,6 +56,7 @@ const hoddie = [
     description: "catharsis hoodie",
     price: "$150",
     image: "/image/hoodie/cat-kindness.webp",
+    star: "✭✭✭✭✭ (23)",
   },
   {
     id: 3,
@@ -57,6 +64,7 @@ const hoddie = [
     description: "catharsis hoodie",
     price: "$150",
     image: "/image/hoodie/cat-normalize.webp",
+    star: "✭✭✭✭ (18)",
   },
   {
     id: 1,
@@ -64,6 +72,7 @@ const hoddie = [
     description: "catharsis hoodie",
     price: "$150",
     image: "/image/hoodie/cat-overwhelmed.webp",
+    star: "✭✭✭ (3)",
   },
   {
     id: 5,
@@ -71,6 +80,7 @@ const hoddie = [
     description: "catharsis hoodie",
     price: "$150",
     image: "/image/hoodie/cat-lost.webp",
+    star: "✭✭✭✭✭ (12)",
   },
 ];
 
@@ -81,6 +91,7 @@ const accessories = [
     description: "catharsis accessories",
     price: "$70",
     image: "/image/accessories/vintageCream.webp",
+    star: "✭✭✭ (8)",
   },
   {
     id: 2,
@@ -88,52 +99,95 @@ const accessories = [
     description: "catharsis accessories",
     price: "$70",
     image: "/image/accessories/vintageBlack.webp",
+    star: "✭✭✭✭✭ (10)",
   },
 ];
 
-
-const user = [
+const gallery = [
   {
-    role: "admin",
-    username: "admin",
-    password: "admin12345",
+    id: 1,
+    image: "/image/gallery/1.jpeg",
   },
   {
-    role: "user",
-    username: "imam",
-    password: "imam12345",
+    id: 2,
+    image: "/image/gallery/2.jpeg",
+  },
+  {
+    id: 3,
+    image: "/image/gallery/3.jpeg",
+  },
+  {
+    id: 4,
+    image: "/image/gallery/4.jpeg",
+  },
+  {
+    id: 5,
+    image: "/image/gallery/5.jpeg",
+  },
+  {
+    id: 6,
+    image: "/image/gallery/6.jpeg",
+  },
+  {
+    id: 7,
+    image: "/image/gallery/7.jpeg",
   },
 ];
 
 const form = document.querySelector("form");
 
-const container = document.getElementById("content");
-console.log(container);
-
 tshirt.forEach((element) => {
-    const ul = document.createElement("ul");
-    const li = document.createElement("li");
-    li.innerText = `id: ${element.id}, title: ${element.title}, description: ${element.description}, price: ${element.price}`;
-    ul.appendChild(li);
-    container.append(ul);
-  });
-
-const submitForm = (event, database) => {
-  event.preventDefault();
-  let username = event.target.username.value;
-  let password = event.target.password.value;
-
-  const user = database.find(
-    (user) => user.username === username && user.password === password
-  );
-  if (user) {
-    alert(`Welcome ${user.username}`);
-    window.location.href = "dashboard.html";
-  } else {
-    alert("invalid credentials, please invalid username or password");
-  }
-};
-
-form.addEventListener("submit", (e) => {
-  submitForm(e, user);
+  const container = document.getElementById("content");
+  const star = document.createElement("span");
+  const div = document.createElement("div");
+  const img = document.createElement("img");
+  const title = document.createElement("h1");
+  const price = document.createElement("h5");
+  star.innerText = `${element.star}`;
+  title.innerText = `${element.title}`;
+  price.innerText = `${element.price}`;
+  div.appendChild(title);
+  div.appendChild(star);
+  div.appendChild(price);
+  container.append(div);
 });
+
+hoddie.forEach((element) => {
+  const container = document.getElementById("content-1");
+  const star = document.createElement("span");
+  const div = document.createElement("div");
+  const img = document.createElement("img");
+  const title = document.createElement("h1");
+  const price = document.createElement("h5");
+  star.innerText = `${element.star}`;
+  title.innerText = `${element.title}`;
+  price.innerText = `${element.price}`;
+  div.appendChild(title);
+  div.appendChild(star);
+  div.appendChild(price);
+  container.append(div);
+});
+
+accessories.forEach((element) => {
+  const container = document.getElementById("content-2");
+  const star = document.createElement("span");
+  const div = document.createElement("div");
+  const img = document.createElement("img");
+  const title = document.createElement("h1");
+  const price = document.createElement("h5");
+  star.innerText = `${element.star}`;
+  title.innerText = `${element.title}`;
+  price.innerText = `${element.price}`;
+  div.appendChild(title);
+  div.appendChild(star);
+  div.appendChild(price);
+  container.append(div);
+});
+
+gallery.forEach((element) => {
+  const container = document.getElementById("content-3");
+  const div = document.createElement('div')
+  const img = document.createElement('img')
+  div.appendChild(img)
+  container.append(div)
+})
