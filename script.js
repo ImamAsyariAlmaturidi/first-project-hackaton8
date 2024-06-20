@@ -147,10 +147,9 @@ tshirt.forEach((element) => {
   // img.classList.add('hover:-translate-y-6');
 
   div.classList.add('relative', 'group', 'overflow-hidden');
-  img.classList.add('transition-transform', 'transform', 'group-hover:-translate-y-1', 'duration-300', );
+  img.classList.add('transition-transform', 'transform', 'group-hover:-translate-y-1', 'duration-300',);
   star.classList.add('absolute', 'top-0', 'right-0', 'bg-black', 'text-white', 'px-2', 'py-1', 'opacity-0', 'transition-opacity', 'group-hover:opacity-100', 'duration-300');
-  
-  // Event listeners for hover effect
+
   img.addEventListener('mouseover', () => {
     img.classList.add('-translate-y-1');
     star.classList.remove('opacity-0');
@@ -259,5 +258,3 @@ gallery.forEach((element) => {
   div.appendChild(img)
   container.append(div)
 })
-
-
