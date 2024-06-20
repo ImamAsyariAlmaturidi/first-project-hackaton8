@@ -1,11 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard Panel</title>
-</head>
-<body>
-    <div>HELLO ADMIN</div>
-</body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div>
+      
+        <h1 class="font-bold text-center my-10 mt-3 text-2xl tracking-widest">
+            TABLE PRODUCTS
+         </h1>
+<div class="relative overflow-x-auto shadow-md shadow-black border-solid border-1 border-gray-600 sm:rounded-lg">
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 border-solid border-1 border-gray-600">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    Id
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Title
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Description
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Price
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Image
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    <span class="text-right">Action</span>
+                </th>
+            </tr>
+        </thead>
+        <tbody id="tshirt-table-body"></tbody>
+    </table>
+
+</div>
+<div class="mb-4">
+    <h1 class="font-bold text-center my-10 mt-3 text-2xl tracking-widest">
+       FORM ADD PRODUCT
+    </h1>
+    <form id="add-tshirt-form" class="flex flex-col md:flex-row md:space-x-2 justify-center">
+      <input type="text" id="title" placeholder="Title" required class="px-3 py-2 border border-gray-300 rounded-md mb-2 md:mb-0">
+      <input type="text" id="description" placeholder="Description" required class="px-3 py-2 border border-gray-300 rounded-md mb-2 md:mb-0">
+      <input type="text" id="price" placeholder="Price" required class="px-3 py-2 border border-gray-300 rounded-md mb-2 md:mb-0">
+      <input type="text" id="image" placeholder="Image URL" required class="px-3 py-2 border border-gray-300 rounded-md mb-2 md:mb-0">
+      <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add Products</button>
+    </form>
+  </div>
+
+    </div>
+    <script src="dashboard.js"></script>
+  </body>
 </html>

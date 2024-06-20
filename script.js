@@ -259,3 +259,5 @@ gallery.forEach((element) => {
   div.appendChild(img)
   container.append(div)
 })
+
+
