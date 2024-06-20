@@ -8,7 +8,18 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
     <script defer src="script.js"></script>
+    <style>
+        #content, #content-1, #content-2, #content-3 {
+          font-family: 'Cinzel', serif;
+        }
+    </style>
   </head>
   <body class="bg-slate-300">
     <header class="header w-full bg-green-200 text-center">
@@ -23,7 +34,7 @@
         <li>
           <a href="content"> SHOP</a>
         </li>
-        <li>Gallery</li>
+        <li class="">Gallery</li>
         <li>Contact</li>
       </ul>
     </div>
@@ -35,8 +46,9 @@
 
     <!-- ini bagian content card tshirt-->
     <div class="my-5 mt-3">
-      <h1 class="font-bold text-center my-10 mt-3 text-2xl tracking-widest">T-SHIRT</h1>
-      <button class="flex bg-red-200 p-10 justify-center rounded-md hover:-translate-y-10">click here</button>
+      <h1 class="font-bold text-center my-10 mt-3 text-2xl tracking-widest">
+        T-SHIRT
+      </h1>
       <br />
       <div id="content">
         <div
@@ -49,7 +61,9 @@
 
     <!-- ini bagian content card hoodie or sweatshirt-->
     <div>
-      <h1 class="font-bold text-center my-10 mt-3 text-2xl tracking-widest">HOODIE & SWEATSHIRT</h1>
+      <h1 class="font-bold text-center my-10 mt-3 text-2xl tracking-widest">
+        HOODIE & SWEATSHIRT
+      </h1>
       <br />
       <div id="content-1">
         <div
@@ -62,7 +76,9 @@
     <!-- ini bagian content card accesorries-->
 
     <div>
-      <h1 class="font-bold text-center my-10 mt-3 text-2xl tracking-widest">ACCESSORIES</h1>
+      <h1 class="font-bold text-center my-10 mt-3 text-2xl tracking-widest">
+        ACCESSORIES
+      </h1>
       <br />
       <div id="content-2">
         <div
@@ -75,13 +91,12 @@
 
     <!-- ini bagian content card gallery -->
     <div>
-      <h1 class="font-bold text-center my-10 mt-3 text-2xl tracking-widest">GALLERY</h1>
+      <h1 class="font-bold text-center my-10 mt-3 text-2xl tracking-widest">
+        GALLERY
+      </h1>
       <br />
       <div id="content-3"></div>
-      <div
-      class=" flex grid grid-cols-2 w-full gap-4"
-      id="container_3"
-    ></div>
+      <div class="flex grid grid-cols-2 w-full gap-4" id="container_3"></div>
     </div>
     <br />
 

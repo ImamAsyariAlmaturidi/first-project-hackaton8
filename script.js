@@ -144,8 +144,26 @@ tshirt.forEach((element) => {
   const img = document.createElement("img");
   const title = document.createElement("h1");
   const price = document.createElement("h5");
-  img.classList.add('hover:-translate-y-6');
+  // img.classList.add('hover:-translate-y-6');
+
+  div.classList.add('relative', 'group', 'overflow-hidden');
+  img.classList.add('transition-transform', 'transform', 'group-hover:-translate-y-1', 'duration-300', );
+  star.classList.add('absolute', 'top-0', 'right-0', 'bg-black', 'text-white', 'px-2', 'py-1', 'opacity-0', 'transition-opacity', 'group-hover:opacity-100', 'duration-300');
+  
+  // Event listeners for hover effect
+  img.addEventListener('mouseover', () => {
+    img.classList.add('-translate-y-1');
+    star.classList.remove('opacity-0');
+  });
+
+  img.addEventListener('mouseout', () => {
+    img.classList.remove('-translate-y-1');
+    star.classList.add('opacity-0');
+  });
+
+
   img.src = `${element.image}`
+  title.classList.add('mt-2')
   star.innerText = `${element.star}`;
   title.innerText = `${element.title}`;
   price.innerText = `${element.price}`;
@@ -165,9 +183,26 @@ hoddie.forEach((element) => {
   const title = document.createElement("h1");
   const price = document.createElement("h5");
   // img.classList.add('w-1/4', 'h-1/4');
+
+  div.classList.add('relative', 'group', 'overflow-hidden');
+  img.classList.add('transition-transform', 'transform', 'group-hover:-translate-y-1', 'duration-300');
+  star.classList.add('absolute', 'top-0', 'right-0', 'bg-black', 'text-white', 'px-2', 'py-1', 'opacity-0', 'transition-opacity', 'group-hover:opacity-100', 'duration-300');
+  
+  // Event listeners for hover effect
+  img.addEventListener('mouseover', () => {
+    img.classList.add('-translate-y-1');
+    star.classList.remove('opacity-0');
+  });
+
+  img.addEventListener('mouseout', () => {
+    img.classList.remove('-translate-y-1');
+    star.classList.add('opacity-0');
+  });
+
   img.src = `${element.image}`
   star.innerText = `${element.star}`;
   title.innerText = `${element.title}`;
+  title.classList.add('mt-2')
   price.innerText = `${element.price}`;
   div.appendChild(img)
   div.appendChild(title);
@@ -185,8 +220,25 @@ accessories.forEach((element) => {
   const title = document.createElement("h1");
   const price = document.createElement("h5");
   // img.classList.add('w-1/2', 'h-1/2')
+
+  div.classList.add('relative', 'group', 'overflow-hidden');
+  img.classList.add('transition-transform', 'transform', 'group-hover:-translate-y-1', 'duration-300');
+  star.classList.add('absolute', 'top-0', 'right-0', 'bg-black', 'text-white', 'px-2', 'py-1', 'opacity-0', 'transition-opacity', 'group-hover:opacity-100', 'duration-300');
+  
+  // Event listeners for hover effect
+  img.addEventListener('mouseover', () => {
+    img.classList.add('-translate-y-1');
+    star.classList.remove('opacity-0');
+  });
+
+  img.addEventListener('mouseout', () => {
+    img.classList.remove('-translate-y-1');
+    star.classList.add('opacity-0');
+  });
+
   img.src = `${element.image}`
   star.innerText = `${element.star}`;
+  title.classList.add('mt-2')
   title.innerText = `${element.title}`;
   price.innerText = `${element.price}`;
   div.appendChild(img)
