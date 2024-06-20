@@ -144,7 +144,7 @@ tshirt.forEach((element) => {
   const img = document.createElement("img");
   const title = document.createElement("h1");
   const price = document.createElement("h5");
-  // img.classList.add('w-1/5', 'h-1/4');
+  img.classList.add('hover:-translate-y-6');
   img.src = `${element.image}`
   star.innerText = `${element.star}`;
   title.innerText = `${element.title}`;
@@ -158,13 +158,13 @@ tshirt.forEach((element) => {
 });
 
 hoddie.forEach((element) => {
-  const container = document.getElementById("content-1");
+  const container = document.getElementById("container_1");
   const star = document.createElement("span");
   const div = document.createElement("div");
   const img = document.createElement("img");
   const title = document.createElement("h1");
   const price = document.createElement("h5");
-  img.classList.add('w-1/5', 'h-1/4');
+  // img.classList.add('w-1/4', 'h-1/4');
   img.src = `${element.image}`
   star.innerText = `${element.star}`;
   title.innerText = `${element.title}`;
@@ -177,13 +177,14 @@ hoddie.forEach((element) => {
 });
 
 accessories.forEach((element) => {
-  const container = document.getElementById("content-2");
+  const container = document.getElementById("container_2");
+  // const container = document.getElementById("content-2");
   const star = document.createElement("span");
   const div = document.createElement("div");
   const img = document.createElement("img");
   const title = document.createElement("h1");
   const price = document.createElement("h5");
-  img.classList.add('w-1/5', 'h-1/4')
+  // img.classList.add('w-1/2', 'h-1/2')
   img.src = `${element.image}`
   star.innerText = `${element.star}`;
   title.innerText = `${element.title}`;
@@ -196,10 +197,11 @@ accessories.forEach((element) => {
 });
 
 gallery.forEach((element) => {
-  const container = document.getElementById("content-3");
+  const container = document.getElementById("container_3");
+  // const container = document.getElementById("content-3");
   const div = document.createElement('div')
   const img = document.createElement('img')
-  img.classList.add('w-1/5', 'h-1/4')
+  // img.classList.add('w-1/4', 'h-1/4')
   img.src = `${element.image}`
   div.appendChild(img)
   div.appendChild(img)
