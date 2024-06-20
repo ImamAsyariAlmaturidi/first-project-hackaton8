@@ -10,7 +10,7 @@
     />
     <script defer src="script.js"></script>
   </head>
-  <body>
+  <body class="bg-slate-300">
     <header class="header w-full bg-green-200 text-center">
       <p class="text-sm">
         30 DAYS OF FREE THERAPY WITH EVERY ORDER - FREE SHIPPING OVER 60€
@@ -20,7 +20,9 @@
     <!-- ini bagian navbar, styling, dan masukin image logo, jika bisa tambahkan humberger menu-->
     <div>
       <ul class="flex justify-between mx-20 py-2">
-        <li>Shop</li>
+        <li>
+          <a href="content"> SHOP</a>
+        </li>
         <li>Gallery</li>
         <li>Contact</li>
       </ul>
@@ -35,7 +37,12 @@
     <div>
       <h1 class="font-bold">T-SHIRT</h1>
       <br />
-      <div id="content"></div>
+      <div id="content">
+        <div
+          class="flex grid text-center w-full justify-around grid-cols-3 gap-4"
+          id="container"
+        ></div>
+      </div>
     </div>
     <br />
 
@@ -57,11 +64,11 @@
 
     <!-- ini bagian content card gallery -->
     <div>
-        <h1 class="font-bold">GALLERY</h1>
-        <br />
-        <div id="content-3"></div>
-      </div>
+      <h1 class="font-bold">GALLERY</h1>
       <br />
+      <div id="content-3"></div>
+    </div>
+    <br />
 
     <!-- ini footer, cari referensi by google-->
     <footer id="footer"></footer>

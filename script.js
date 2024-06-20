@@ -137,19 +137,24 @@ const gallery = [
 const form = document.querySelector("form");
 
 tshirt.forEach((element) => {
-  const container = document.getElementById("content");
+  const container = document.getElementById("container");
+  const content = document.getElementById('content')
   const star = document.createElement("span");
   const div = document.createElement("div");
   const img = document.createElement("img");
   const title = document.createElement("h1");
   const price = document.createElement("h5");
+  // img.classList.add('w-1/5', 'h-1/4');
+  img.src = `${element.image}`
   star.innerText = `${element.star}`;
   title.innerText = `${element.title}`;
   price.innerText = `${element.price}`;
+  div.appendChild(img)
   div.appendChild(title);
   div.appendChild(star);
   div.appendChild(price);
   container.append(div);
+  content.append(container)
 });
 
 hoddie.forEach((element) => {
@@ -159,9 +164,12 @@ hoddie.forEach((element) => {
   const img = document.createElement("img");
   const title = document.createElement("h1");
   const price = document.createElement("h5");
+  img.classList.add('w-1/5', 'h-1/4');
+  img.src = `${element.image}`
   star.innerText = `${element.star}`;
   title.innerText = `${element.title}`;
   price.innerText = `${element.price}`;
+  div.appendChild(img)
   div.appendChild(title);
   div.appendChild(star);
   div.appendChild(price);
@@ -175,9 +183,12 @@ accessories.forEach((element) => {
   const img = document.createElement("img");
   const title = document.createElement("h1");
   const price = document.createElement("h5");
+  img.classList.add('w-1/5', 'h-1/4')
+  img.src = `${element.image}`
   star.innerText = `${element.star}`;
   title.innerText = `${element.title}`;
   price.innerText = `${element.price}`;
+  div.appendChild(img)
   div.appendChild(title);
   div.appendChild(star);
   div.appendChild(price);
@@ -188,6 +199,9 @@ gallery.forEach((element) => {
   const container = document.getElementById("content-3");
   const div = document.createElement('div')
   const img = document.createElement('img')
+  img.classList.add('w-1/5', 'h-1/4')
+  img.src = `${element.image}`
+  div.appendChild(img)
   div.appendChild(img)
   container.append(div)
 })
