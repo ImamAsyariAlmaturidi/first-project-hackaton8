@@ -19,25 +19,37 @@
         #content, #content-1, #content-2, #content-3 {
           font-family: 'Cinzel', serif;
         }
+        .header{
+          font-family: 'Cinzel', serif;
+          font-size: small;
+        }
     </style>
   </head>
   <body class="bg-slate-300">
-    <header class="header w-full bg-green-200 text-center">
-      <p class="text-sm">
+    <header class="header w-full bg-green-200 text-center py-2">
+      <p class="text-sm font-bold sm:text-sm">
         30 DAYS OF FREE THERAPY WITH EVERY ORDER - FREE SHIPPING OVER 60€
       </p>
     </header>
 
     <!-- ini bagian navbar, styling, dan masukin image logo, jika bisa tambahkan humberger menu-->
-    <div>
-      <ul class="flex justify-between mx-20 py-2">
+    <div class="bg-gray-100 py-6">
+      <ul class="flex justify-around space-x-6">
         <li>
-          <a href="content"> SHOP</a>
+          <h1 class="font-bold italic text-lg">
+            <a href="index.html" class="text-gray-800 hover:text-gray-900">Cathasis Empire</a>
+          </h1>
         </li>
-        <li class="">Gallery</li>
-        <li>Contact</li>
+        <li class="font-bold tracking-widest text-md">
+          <a href="tshirt.html" class="text-gray-800 hover:text-gray-900">T-shirts</a>
+        </li>
+        <li class="font-bold tracking-widest text-md">
+          <a href="hoodie.html" class="text-gray-800 hover:text-gray-900">Hoodies</a>
+        </li>
       </ul>
     </div>
+    
+    
 
     <!-- ini bagian carousel, styling text diatas gambar pake z-index bisa sedikit tambahin button-->
     <div class="mb-10">
@@ -89,18 +101,64 @@
     </div>
     <br />
 
-    <!-- ini bagian content card gallery -->
-    <div>
-      <h1 class="font-bold text-center my-10 mt-3 text-2xl tracking-widest">
-        GALLERY
-      </h1>
-      <br />
-      <div id="content-3"></div>
-      <div class="flex grid grid-cols-2 w-full gap-4" id="container_3"></div>
-    </div>
-    <br />
-
     <!-- ini footer, cari referensi by google-->
-    <footer id="footer"></footer>
+    <footer id="footer" class="border-t border-indigo-500 bg-gray-300">
+      <div class="mx-auto w-full max-w-screen-xl">
+        <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+          
+          <div>
+            <h2
+              class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+            >Support</h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Search</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">FAQ</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Sizes Guide</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline"
+                  >Sell Catharsis on your store</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2
+              class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+            >Legal Terms</h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Cookies</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Refund Policy</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+              </li>
+              <li class="mb-4">
+                <a href="#" class="hover:underline"
+                  >Terms of Service</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between">
+            <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© 2024 Catharsis</span>
+            <div class="flex mt-4 sm:justify-center md:mt-0 space">
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
