@@ -39,6 +39,38 @@ const tshirt = [
     image: "/image/t-shirt/cat-boundaries.webp",
     star: "✭✭✭✭ (15)",
   },
+  {
+    id: 6,
+    title: "ASKING FOR HELP IS PART OF BEING STRONG",
+    description: "catharsis t-shirt",
+    price: "$100",
+    image: "/image/gallery/cat-askingforhelp.webp",
+    star: "✭✭✭✭ (15)",
+  },
+  {
+    id: 7,
+    title: "DON'T BE A NOODLE, GIVE YOURSELF A BREAK",
+    description: "catharsis t-shirt",
+    price: "$100",
+    image: "/image/gallery/cat-noodle.webp",
+    star: "✭✭✭✭ (15)",
+  },
+  {
+    id: 8,
+    title: "STOP JUDGING",
+    description: "catharsis t-shirt",
+    price: "$100",
+    image: "/image/gallery/cat-stopjudging.webp",
+    star: "✭✭✭✭ (15)",
+  },
+  {
+    id: 9,
+    title: "SAY THANK YOU AND LET GO",
+    description: "catharsis t-shirt",
+    price: "$100",
+    image: "/image/gallery/cat-thankyou.webp",
+    star: "✭✭✭✭ (15)",
+  },
 ];
 
 const hoddie = [
